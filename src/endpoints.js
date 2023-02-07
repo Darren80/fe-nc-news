@@ -6,9 +6,6 @@ let axios1 = axios.create({
 
 })
 
-let getArticles = () => {
+export let getArticles = () => {
     return axios1.get('/articles')
-        .then(data => data.json());
 }
-
-module.exports = {getArticles}
