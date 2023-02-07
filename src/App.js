@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import ArticleCards from './components/ArticleCards';
+import ArticleCard from './components/ArticleCard';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-        <ArticleCards />
+        <img src={logo} className="App-logo" alt="logo" />
+        <ArticleCard/>
       </header>
     </div>
   );
