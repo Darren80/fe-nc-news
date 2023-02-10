@@ -6,9 +6,10 @@ let axios1 = axios.create({
 
 })
 
-let getArticles = () => {
+export const getArticles = () => {
     return axios1.get('/articles')
-        .then(data => data.json());
 }
 
-module.exports = {getArticles}
+export const getArticle = (articleID) => {
+    return axios1.get(`/article/${articleID}`);
+}
