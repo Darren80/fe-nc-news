@@ -1,0 +1,34 @@
+
+.comments-area {
+    width: 50%;
+    margin: auto;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 'author date'
+    'content1 content1';
+
+    padding: 2rem 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.comment .author {
+    grid-area: author;
+    font-size: 1rem;
+}
+
+.comment .date {
+    grid-area: date;
+    font-size: 1rem;
+    color: gray;
+}
+
+.comment .content {
+    margin-top: 2rem;
+    grid-area: content1;
+}
