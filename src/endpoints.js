@@ -13,3 +13,7 @@ export const getArticles = () => {
 export const getArticle = (articleID) => {
     return axios1.get(`/article/${articleID}`);
 }
+
+export const getArticlesComments = (articleID) => {
+    return axios1.get(`/articles/${articleID}/comments`);
+}

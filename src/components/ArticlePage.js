@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import { getArticle } from '../endpoints';
+import Comments from './Comments';
 
 function ArticlePage() {
     let { article_id } = useParams();
@@ -26,6 +27,7 @@ function ArticlePage() {
                     </div>
                 </div>
                 : null}
+            <Comments article_id={article_id}/>
         </div>
     )
 }
